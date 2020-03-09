@@ -21,7 +21,8 @@ const routes = [
   },
   {
     path: "/resumes",
-    name: "resumes-index"
+    name: "resumes-index",
+    component: ResumesIndex
   }
 ];
 
