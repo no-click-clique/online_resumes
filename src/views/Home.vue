@@ -1,18 +1,20 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="This is a test" />
+    <h1>{{ message }}</h1>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+<style>
+</style>
 
+<script>
 export default {
-  name: "Home",
-  components: {
-    HelloWorld
-  }
+  data: function() {
+    return {
+      message: "Welcome The Online Resume App!"
+    };
+  },
+  created: function() {},
+  methods: {}
 };
 </script>
