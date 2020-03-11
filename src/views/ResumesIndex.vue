@@ -1,6 +1,9 @@
 <template>
   <div class="resume-index">
     <h1>All Resumes</h1>
+    <div v-for="student in students">
+      <h2>{{ student.first_name }}</h2>
+    </div>
   </div>
 </template>
 
@@ -12,11 +15,12 @@ import axios from "axios";
 export default {
   data: function() {
     return {
-      resumes: []
+      students: [],
+      message: "This is the resume index."
     };
   },
   created: function() {
-    axios.get("api/resumes").then(response => {
+    axios.get("api/students").then(response => {
       this.resumes = response.data;
     });
   },
