@@ -1,6 +1,6 @@
 <template>
   <div class="students-index">
-    <h1>All Students</h1>
+    <h5>All Students</h5>
     <div v-for="student in students">
       <h2>{{ student.first_name }} {{ student.last_name }}</h2>
       <h3><img v-bind:src="student.photo" /></h3>
