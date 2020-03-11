@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import ResumesIndex from "../views/ResumesIndex.vue";
+import StudentsIndex from "../views/StudentsIndex.vue";
 
 Vue.use(VueRouter);
 
@@ -20,9 +20,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
-    path: "/resumes",
-    name: "resumes-index",
-    component: ResumesIndex
+    path: "/students",
+    name: "students-index",
+    component: StudentsIndex
   }
 ];
 
