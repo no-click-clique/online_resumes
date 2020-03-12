@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="container">
-      <img v-bind:src="student.photo" alt="" />
+      <!-- <img v-bind:src="student.photo" alt="" /> -->
       <!-- <img v-bind:src="student.photo" alt="">
       <h1>{{ student.first_name }} {{ student.last_name }}</h1>
       <span>
@@ -136,11 +136,18 @@
                 <span>{{ capstone.screenshot }}</span>
                 <br />
               </div>
-              <!--  <p class="mb-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!
-              </p> -->
-              <!--  <div class="intro-button mx-auto">
-                <a class="btn btn-primary btn-xl" href="#">Visit Us Today!</a>
-              </div> -->
+              <br />
+              <br />
+              <a
+                class="twitter-timeline"
+                data-lang="en"
+                data-width="400"
+                data-height="400"
+                data-theme="light"
+                :href="`https://twitter.com/${student.twitter_handle}?ref_src=twsrc%5Etfw`"
+              >
+                Tweets by {{ student.twitter_handle }}
+              </a>
             </div>
           </div>
         </div>
