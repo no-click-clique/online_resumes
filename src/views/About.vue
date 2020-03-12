@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>This website was created to learn about Actualize students and check out their resumes.</h1>
   </div>
 </template>

@@ -74,10 +74,12 @@
                 <span class="section-heading-upper">{{ student.email }}</span>
                 <span class="section-heading-upper">Ph: {{ student.phone_number }}</span>
                 <span class="section-heading-upper">{{ student.linkedin_url }}</span>
-                <span class="section-heading-upper">{{ student.twitter_handle }}</span>
               </h2>
-              Skills:
-              <span v-for="skill in student.skills">{{ skill.name }},</span>
+              <h3>Skills</h3>
+              <span v-for="skill in student.skills">
+                {{ skill.name }}
+                <br />
+              </span>
               <br />
               <br />
 
@@ -144,7 +146,7 @@
                 data-width="400"
                 data-height="400"
                 data-theme="light"
-                :href="`https://twitter.com/${student.twitter_handle}?ref_src=twsrc%5Etfw`"
+                :href="`${student.twitter_handle}?ref_src=twsrc%5Etfw`"
               >
                 Tweets by {{ student.twitter_handle }}
               </a>
