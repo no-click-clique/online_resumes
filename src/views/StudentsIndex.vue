@@ -8,10 +8,10 @@
       <router-link v-bind:to="`/students/${student.id}`">More Details</router-link>
     </div> -->
 
-    <section class="page-section clearfix">
+    <section v-for="student in students" class="page-section clearfix">
       <div class="container">
-        <div v-for="student in students" class="intro">
-          <!-- <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" v-bind:src="student.photo" alt=""> -->
+        <div class="intro">
+          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" v-bind:src="student.photo" alt="">
           <div class="intro-text left-0 text-center bg-faded p-5 rounded">
             <h2 class="section-heading mb-4">
               <span class="section-heading-upper">Actualize Graduate</span>

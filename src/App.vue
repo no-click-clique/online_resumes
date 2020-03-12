@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
         <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">ACTUALIZE STUDENTS</a>
@@ -46,11 +47,12 @@
 
     <router-view />
 
-    <footer class="footer text-faded text-center py-5">
+ <!--    <footer class="footer text-faded text-center py-5">
       <div class="container">
         <p class="m-0 small">Copyright Ben and Mike Website 2020</p>
       </div>
-    </footer>
+    </footer> -->
+    
   </div>
 </template>
 
